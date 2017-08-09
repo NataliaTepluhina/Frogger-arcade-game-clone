@@ -11,7 +11,6 @@ var Enemy = function(startX, startY, speed) {
     // The image/sprite for our enemies, this uses
     // a helper we've provided to easily load images
     this.sprite = Enemy.prototype.selectSprite ();
-    //TODO: create an array of enemies sprites and function to randomize
 };
 
 // Update the enemy's position, required method for game
@@ -69,9 +68,7 @@ Enemy.prototype = {
     }
 };
 
-// Now write your own player class
-// This class requires an update(), render() and
-// a handleInput() method.
+// Player class
 
 var Player = function (dt){
     this.startX = 205;
